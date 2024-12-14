@@ -14,31 +14,34 @@ import Settings from "../profile/Settings.jsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx";
 import Developer from "../pages/Developer.jsx";
 import MainBoard from "../pages/MainBoard.jsx";
+import PlayOnline from "../pages/PlayOnline.jsx";
 import TermsOfService from "../pages/TermsOfService.jsx";
 
 const RouterPage = () => {
-  return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/feedback" element={<Feedback />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/forgotpassword" element={<ForgotPassword />} />
-        <Route path="/profile/:id" element={<Playerdetails />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/terms" element={<TermsOfService />} />
-        <Route path="/privacy" element={<PrivacyPolicy />} />
-        <Route path="/developer" element={<Developer />} />
-        <Route path="/board" element={<MainBoard />} />
-      </Routes>
-    </div>
-  );
+	return (
+		<div>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/home" element={<Home />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/login" element={<Login />} />
+				<Route path="/signup" element={<Signup />} />
+				<Route path="/features" element={<Features />} />
+				<Route path="/feedback" element={<Feedback />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/forgotpassword" element={<ForgotPassword />} />
+				<Route path="/profile/:id" element={<Playerdetails />} />
+				<Route path="/profile" element={<Profile />} />
+				<Route path="/settings" element={<Settings />} />
+				<Route path="/terms" element={<TermsOfService />} />
+				<Route path="/privacy" element={<PrivacyPolicy />} />
+				<Route path="/developer" element={<Developer />} />
+				<Route path="/board" element={<MainBoard />} />
+				<Route path="/online/board" element={<PlayOnline />} />
+			</Routes>
+		</div>
+	);
 };
 
 export default RouterPage;
+
