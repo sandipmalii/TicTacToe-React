@@ -46,6 +46,16 @@ export class GameManager {
 					console.log(this.games);
 				}
 			}
+			if (type == CHAT_MESSAGE) {
+				const game = this.games.find(
+					(game) => game.player1 == player || game.player2 == player
+				);
+				//If there is no game associated with the player just do nothing.
+				if (!game) {
+					return;
+				}
+				game.addMessage(player, payload.message);
+			}
 		});
 	}
 }

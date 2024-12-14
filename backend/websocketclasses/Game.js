@@ -216,5 +216,31 @@ export default class Game {
 		//Handle draw or continue game
 		return [false, this.moves.length == 9, null];
 	}
+	addMessage(player, message) {
+		if (message.trim().length == 0) {
+			return;
+		}
+		const payload = { name: player.name, message: message };
+		this.chat.push({ ...payload, id: player.id });
+		this.player2.socket.send(
+			JSON.stringify({
+				type: CHAT_MESSAGE,
+				payload: {
+					...payload,
+					sentByYou: player.id == this.player2.id,
+				},
+			})
+		);
+
+		this.player1.socket.send(
+			JSON.stringify({
+				type: CHAT_MESSAGE,
+				payload: {
+					...payload,
+					sentByYou: player.id == this.player1.id,
+				},
+			})
+		);
+	}
 }
 
