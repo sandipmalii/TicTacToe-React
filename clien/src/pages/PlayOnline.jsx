@@ -233,7 +233,7 @@ const PlayOnline = () => {
 					style={{ backgroundColor: "#0D1B2A" }}
 				>
 					{/* Moves */}
-					<div className="lg:w-1/3 flex flex-col mt-4 md:mt-0 justify-between md:p-4 order-2 flex-grow">
+					<div className="lg:w-1/3 flex flex-col mt-4 md:mt-0 justify-between md:p-4 order-1 flex-grow">
 						<div className="bg-gray-800 shadow-lg md:p-6 p-4 pt-6 rounded-lg flex gap-2 flex-col flex-grow">
 							<h2 className="text-2xl font-bold">Moves</h2>
 							<div className="flex flex-col gap-2 h-[400px] overflow-y-auto">
@@ -263,7 +263,7 @@ const PlayOnline = () => {
 						</div>
 					</div>
 					{/* Tic Tac Toe game */}
-					<div className="lg:w-1/3 md:w-1/2 flex justify-center order-1">
+					<div className="lg:w-1/3 md:w-1/2 flex justify-center order-2">
 						<div className="flex flex-col items-center">
 							{!game.isGameOver ? (
 								<div className="flex flex-col items-center">
