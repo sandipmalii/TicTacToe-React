@@ -12,7 +12,7 @@ A real-time **Multiplayer Tic Tac Toe Game** built using modern web technologies
 
 ## 🧱 Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS, JavaScript, React
 - **Backend:** Node.js, Express.js
 - **Real-time Communication:** Socket.IO
 - **Database (optional):** MongoDB (for user scores or game history)
