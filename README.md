@@ -68,7 +68,11 @@ To test multiplayer, open the link in **two tabs or two devices**.
 
 ![Screenshot (20)](https://github.com/user-attachments/assets/28c4eb51-212f-47a7-b4d3-826712ccd564)
 
- ![Screenshot 2024-12-29 211852](https://github.com/user-attachments/assets/cf1f889c-2b6d-4175-9524-2a1eab0d30fe)
+![Screenshot 2024-12-29 211852](https://github.com/user-attachments/assets/cf1f889c-2b6d-4175-9524-2a1eab0d30fe)
+
+![Screenshot (24)](https://github.com/user-attachments/assets/1c2f2bc9-067d-452d-bc16-b15e630cbb91)
+
+ 
 
 
 ---
@@ -83,6 +87,8 @@ This project was built collaboratively with contributions in:
 
 **Main Contributor:**  
 - [Sandip Mali](https://github.com/sandipmalii)
+- [G.Pradeep Kumar](https://github.com/sandipmalii)
+
 
 Want to collaborate? [Open an issue](https://github.com/sandipmalii/TicTacToe-React/issues)!
 
